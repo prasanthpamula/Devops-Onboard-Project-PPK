@@ -11,4 +11,76 @@
 	5.git push
 	6.git pull
 	7.git merge
-	
+
+
+3. creating a branch 
+
+git checkout -b 1.19.0
+
+4. pushing this branch to remote repo
+
+git push origin 1.19.0
+
+
+5.tag creation
+
+syntax
+------
+git tag <tag name> <commit id>
+
+Taking commit id and from git log
+
+$ git log
+commit b258743cbc1d110a14168ae3facf6972bc05b472 (HEAD -> 1.19.0, origin/1.19.0)
+Author: prasanth.pamula <prasanth.pamula@atmecs.com>
+Date:   Tue Feb 12 17:55:03 2019 +0530
+
+    create 1.19.0 branch
+
+commit cc945eab849795c70f29a5d6786c97ce4bc87d2e (origin/master, origin/HEAD, master)
+Author: prasanth.pamula <prasanth.pamula@atmecs.com>
+Date:   Tue Feb 12 14:23:58 2019 +0530
+
+    created 1-understanding-devops-doc
+
+commit ac70fc6264b9be11ee88357d23527736cc49b34b
+Author: prasanthpamula <47555671+prasanthpamula@users.noreply.github.com>
+Date:   Tue Feb 12 14:17:24 2019 +0530
+
+    Initial commit
+
+
+6.creating read-only commits?
+
+annotated tags helps in creating read only tags for restricting team member to commit changes.
+for annotated tag we should name as annotated.
+
+git tag ppk_annotated b258743cbc1d110a14168ae3facf6972bc05b472 -m "ppk launch"
+
+ppk_annotated : tag name
+
+-m : message to recognize
+
+
+7. list tags
+
+git tag -l
+
+
+8. pushing tags to remote repo.
+
+git push --tags
+
+
+8. Rollback
+
+1.with a particular commit id we can rollback the changes
+
+git log
+get commit id here.
+
+git checkout <commit id>
+
+or
+
+2.git reset --hard HEAD
