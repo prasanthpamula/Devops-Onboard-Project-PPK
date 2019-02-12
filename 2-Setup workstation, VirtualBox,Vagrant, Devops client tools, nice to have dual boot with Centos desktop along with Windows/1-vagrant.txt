@@ -1,0 +1,23 @@
+concepts
+------
+
+1.what & why virtualization
+2.vagrant installation in windows(local machine) & linux(centos7 virtualbox) & validation of installation
+3.creating ubuntu machine & running it.
+
+a.vagrant init bento/ubuntu-16.04;vagrant up --provider virtualbox
+
+bento : provider
+ubuntu-16.0:  os template name
+vagrant up : create and configure
+provider : virtualization tool used for this os template need
+
+2.vargrant ssh: to get into machine of ubuntu-16.0 
+
+3.vagrant halt : -- stops the vagrant machine
+
+4.vagrant suspend -- suspends a virtual machine (remembers state)
+
+5.vagrant destroy -- stops and deletes all traces of the vagrant machine
+
+  vagrant destroy -f -- same as above, without confirmation

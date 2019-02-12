@@ -1,0 +1,14 @@
+0. git set up in windows and linux and installation verification
+
+1.setting up git repository
+
+2.Git Basic workflow / working with git commands
+
+	1.git config
+	2.git clone
+	3.git add
+	4.git commit
+	5.git push
+	6.git pull
+	7.git merge
+	
