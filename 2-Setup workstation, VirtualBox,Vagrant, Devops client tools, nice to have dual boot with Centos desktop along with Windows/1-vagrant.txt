@@ -21,3 +21,8 @@ provider : virtualization tool used for this os template need
 5.vagrant destroy -- stops and deletes all traces of the vagrant machine
 
   vagrant destroy -f -- same as above, without confirmation
+
+
+6.vagrant status : tells ,is it running or stopped.
+
+7 vagrant reload

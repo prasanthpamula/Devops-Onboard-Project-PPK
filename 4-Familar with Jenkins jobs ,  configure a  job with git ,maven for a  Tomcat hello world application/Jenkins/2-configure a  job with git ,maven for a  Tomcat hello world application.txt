@@ -1,0 +1,5 @@
+1. Have created jenkins pipeline job for hello world application to deploy implictly
+
+Github location of helloworld application code
+
+https://github.com/prasanthpamula/Hello-World/tree/1.19.0
